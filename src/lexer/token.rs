@@ -1,0 +1,22 @@
+#[derive(Debug)]
+pub enum Token {
+    EOF,
+    QuestionMark,
+    Endline,
+    Assign,
+    ConstAssign,
+    Equal,
+    Comma,
+    Dot,
+    Semicolon,
+    Quote,
+    DQuote,
+    Slash,
+    Comment,
+    OpenParen,
+    CloseParen,
+    Name(String),
+    Str(String),
+    Number(i64),
+    StrangeChar(char),
+}
